@@ -1,21 +1,18 @@
-# *Sketch-SparseNet*
+# TetrisNet: Tetris Kernels for Sketch Recognition and Beyond
 
 
 
-This is the official implementation of "***Sketch-SparseNet***: A Novel Sparse-convolution-based Framework for Sketch Recognition"
+This is the official implementation of "TetrisNet: Tetris Kernels for Sketch Recognition and Beyond"
 
-## Supported Backbone
+## Folder Overview
 
+**CAN_yang**: Codes and data for Handwritten Mathematical Expression Recognition on CROHME dataset.
 
+**Swin-Transformer-Object-Detection**: Codes and data for Instance Segmentation on COCO dataset.
 
--  ResNet 18/34/50/101
--  MnasNet
--  Mobilenet
--  DenseNet
--  Swin Transformer
--  GNN
--  RNN
--  Transformer
+**MMSegmentation:** Codes and data for vessel segmentation on DRIVE dataset.
+
+**TetrisNet:**Codes and data for sketch recognition on QuickDraw-414k and TU-Berlin datasets.
 
 ## Supported Datasets
 
