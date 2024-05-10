@@ -6,21 +6,57 @@ This is the official implementation of "TetrisNet: Tetris Kernels for Sketch Rec
 
 ## Folder Overview
 
+
+
 **CAN_yang**: Codes and data for Handwritten Mathematical Expression Recognition on CROHME dataset.
 
 **Swin-Transformer-Object-Detection**: Codes and data for Instance Segmentation on COCO dataset.
 
 **MMSegmentation:** Codes and data for vessel segmentation on DRIVE dataset.
 
-**TetrisNet:**Codes and data for sketch recognition on QuickDraw-414k and TU-Berlin datasets.
+**TetrisNet:** Codes and data for sketch recognition on QuickDraw-414k and TU-Berlin datasets.
 
-## Supported Datasets
+### Prerequisites
 
+The code is built with following libraries:
 
+- Python >= 3.6, <3.8
+- [PyTorch](https://github.com/pytorch/pytorch) >= 1.6
+- [tqdm](https://github.com/tqdm/tqdm)
+- [torchpack](https://github.com/mit-han-lab/torchpack)
+- [torchsparse](https://github.com/mit-han-lab/torchsparse)
+- [numba](http://numba.pydata.org/)
+- [cv2](https://github.com/opencv/opencv)
+- mmcv-full==1.4.0
+- [spconv](https://github.com/traveller59/spconv)
 
--  QuickDraw-414k
--  Tuberlin
--  CIFAR
+## CAN_yang
+
+### Datasets
+
+Download the CROHME dataset from [BaiduYun](https://pan.baidu.com/s/1qUVQLZh5aPT6d7-m6il6Rg) (downloading code: 1234) and put it in `datasets/`.
+
+The HME100K dataset can be download from the official website [HME100K](https://ai.100tal.com/dataset).
+
+### Training
+
+Check the config file `config.yaml` and train with the CROHME dataset:
+
+```
+python train.py --dataset CROHME
+```
+
+By default the `batch size` is set to 8 and you may need to use a GPU with 32GB RAM to train your model.
+
+### Testing
+
+Fill in the `checkpoint` (pretrained model path) in the config file `config.yaml` and test with the CROHME dataset:
+
+```
+python inference.py --dataset CROHME
+```
+
+Note that the testing dataset path is set in the `inference.py`.
 
 ## Installation
 
