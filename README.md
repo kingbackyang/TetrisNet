@@ -12,7 +12,7 @@ This is the official implementation of "TetrisNet: Tetris Kernels for Sketch Rec
 
 **MMSegmentation:** Codes and data for vessel segmentation on DRIVE dataset.
 
-**TetrisNet:**Codes and data for sketch recognition on QuickDraw-414k and TU-Berlin datasets.
+**TetrisNet:** Codes and data for sketch recognition on QuickDraw-414k and TU-Berlin datasets.
 
 ## Supported Datasets
 
